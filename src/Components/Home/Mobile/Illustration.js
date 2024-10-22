@@ -3,7 +3,7 @@ import friendly from "../../../images/Home/Mobile/friendly.svg";
 import resource from "../../../images/Home/Mobile/resourceful.svg";
 function Illustration() {
   return (
-    <div className="flex flex-col space-y-10 w-full mt-20 mb-72">
+    <div className="flex flex-col space-y-10 w-full mt-20 mb-72 smallhide largehide">
       <div className="flex flex-col items-center px-10 relative">
         <div
           className="pattern270 w-[202px] h-[202px] flex justify-center bg-cover 
