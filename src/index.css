@@ -1,13 +1,154 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.josth1 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 48px;
+  font-style: normal;
+}
+.josth2 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  font-style: medium;
+}
+.josth3 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-style: medium;
+}
+.jostreg {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: regular;
+}
+.jostmed {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 32px;
+}
+.jost28 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 28px;
+}
+.jost20 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+}
+.jost14 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+}
+.jost15 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  top: 5px;
+  left: 0;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+
+  border-radius: 20px;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background: black;
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background: black;
+}
+
+.darklogo {
+  background-image: url("images/Shared/logo-dark.png");
+}
+.lightlogo {
+  background-image: url("images/Shared/logo-light.png");
+}
+.pattern {
+  background-image: url("images/Shared/Mobile/heropattern.svg");
+}
+.pattern270 {
+  background-image: url("images/Shared/Mobile/heropattern.svg");
+  transform: rotate(270deg);
+}
+.pattern180 {
+  background-image: url("images/Shared/Mobile/heropattern.svg");
+  transform: rotate(180deg);
+}
+.circle {
+  background-image: url("images/Shared/Mobile/pattern1.svg");
+}
+.hero {
+  background-image: url("images/Home/Mobile/image-hero-phone.png");
+}
+.mobileweb {
+  background-image: url("images/Home/Mobile/web.jpg");
+}
+.mobilegraphic {
+  background-image: url("images/Home/Mobile/graphic.jpg");
+}
+.mobilelyft {
+  background-image: url("images/Home/Mobile/lyft.jpg");
+}
+
+.smallhide {
+  @media screen and (max-width: 1020px) and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mediumhide {
+  @media screen and (max-width: 760px) and (min-width: 320px) {
+    display: none;
+  }
+}
+
+.largehide {
+  @media screen and (min-width: 1021px) {
+    display: none;
+  }
+}
+.desktophide {
+  @media screen and (max-width: 1021px) {
+    display: none;
+  }
 }
