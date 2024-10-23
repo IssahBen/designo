@@ -129,6 +129,24 @@
 .mobilelyft {
   background-image: url("images/Home/Mobile/lyft.jpg");
 }
+.express {
+  background-image: url("images/Web/image-express.jpg");
+}
+.transfer {
+  background-image: url("images/Web/image-transfer.jpg");
+}
+.photon {
+  background-image: url("images/Web/image-photon.jpg");
+}
+.builder {
+  background-image: url("images/Web/image-builder.jpg");
+}
+.blogr {
+  background-image: url("images/Web/image-blogr.jpg");
+}
+.camp {
+  background-image: url("images/Web/image-camp.jpg");
+}
 
 .smallhide {
   @media screen and (max-width: 1020px) and (min-width: 768px) {
