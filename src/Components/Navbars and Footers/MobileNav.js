@@ -36,7 +36,7 @@ export default function MobileNav() {
     <div className="w-full flex justify-center bg-white smallhide largehide h-[70px]">
       <div className="flex w-full bg-white py-4  px-4 items-center justify-between ">
         <div className="flex justify-between w-full">
-          <div className="w-[202px] darklogo  bg-cover"></div>
+          <div onClick={Home} className="w-[202px] darklogo  bg-cover"></div>
           <div className=" poppins-regular ">
             <button
               id="menu-btn"

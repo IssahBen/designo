@@ -147,6 +147,33 @@
 .camp {
   background-image: url("images/Web/image-camp.jpg");
 }
+.airfilter {
+  background-image: url("images/Apps/image-airfilter.jpg");
+}
+.eyecam {
+  background-image: url("images/Apps/image-eyecam.jpg");
+}
+.faceit {
+  background-image: url("images/Apps/image-faceit.jpg");
+}
+.faceit {
+  background-image: url("images/Apps/image-faceit.jpg");
+}
+.loop {
+  background-image: url("images/Apps/image-loopstudios.jpg");
+}
+.todo {
+  background-image: url("images/Apps/image-todo.jpg");
+}
+.change {
+  background-image: url("images/Graphic/image-change.jpg");
+}
+.science {
+  background-image: url("images/Graphic/image-science.jpg");
+}
+.boxwater {
+  background-image: url("images/Graphic/image-boxed-water.jpg");
+}
 
 .smallhide {
   @media screen and (max-width: 1020px) and (min-width: 768px) {

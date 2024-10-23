@@ -4,7 +4,7 @@ import MobileCategory from "./Mobile/MobileCategory";
 import MobileHero from "./Mobile/MobileHero";
 import Services from "./Mobile/Services";
 
-function Graphic() {
+export default function Apps() {
   return (
     <div className="relative w-screen h-screen overflow-y-auto flex flex-col">
       <main className="w-full h-full">
@@ -25,5 +25,3 @@ function Graphic() {
     </div>
   );
 }
-
-export default Graphic;
