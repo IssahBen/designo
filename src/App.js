@@ -7,6 +7,7 @@ import Graphic from "./Components/Graphic/Graphic";
 import About from "./Components/About/About";
 import Location from "./Components/Location/Location";
 import Apps from "./Components/App/Apps";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="graphic" element={<Graphic />} />
         <Route path="about" element={<About />} />
         <Route path="location" element={<Location />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

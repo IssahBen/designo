@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Mobilefooter() {
+  const navigate = useNavigate();
+  function Redirect() {
+    navigate("/contact");
+  }
   return (
     <div className="flex flex-col w-full h-[815px] bg-black items-center space-y-10 smallhide largehide relative">
       <div className="flex flex-col w-[327px] h-[379px] bg-peach absolute z-10 top-[-150px] rounded-2xl">
@@ -19,7 +24,10 @@ export default function Mobilefooter() {
             how our expertise can help your business now
           </p>
 
-          <button class="bg-white hover:bg-hoverbrown  text-black font-normal py-4 px-10 rounded-xl ">
+          <button
+            onClick={Redirect}
+            class="bg-white hover:bg-hoverbrown  text-black font-normal py-4 px-10 rounded-xl "
+          >
             GET IN TOUCH
           </button>
         </div>
@@ -28,13 +36,13 @@ export default function Mobilefooter() {
       <div className="w-[202px] lightlogo h-[27px] mt-10 bg-cover"></div>
       <div className="w-[327px] border-t-[0.2px] border-brown"></div>
       <div className="flex flex-col jost14 items-center text-white space-y-4 font-light">
-        <NavLink to="/" className="hover:text-hoverbrown">
+        <NavLink to="about" className="hover:text-hoverbrown">
           OUR COMPANY
         </NavLink>
-        <NavLink to="/headphones" className="hover:text-hoverbrown">
+        <NavLink to="/location" className="hover:text-hoverbrown">
           LOCATIONS
         </NavLink>
-        <NavLink to="/speakers" className="hover:text-hoverbrown">
+        <NavLink to="/contact" className="hover:text-hoverbrown">
           CONTACT
         </NavLink>
       </div>
@@ -47,7 +55,7 @@ export default function Mobilefooter() {
       </div>
       <div className="flex flex-col jost14 items-center  space-y-2 font-light text-lightgrey">
         <p className=" font-bold">Contact Us (Central Office)</p>
-        <p className="hover:text-hoverbrown">P: +1 253-863-8967t</p>
+        <p className="hover:text-hoverbrown">P: +1 253-863-8967</p>
         <p to="/speakers" className="hover:text-hoverbrown">
           M: contact@designo.co
         </p>
