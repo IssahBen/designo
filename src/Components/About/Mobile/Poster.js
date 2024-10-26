@@ -1,6 +1,6 @@
 function Poster() {
   return (
-    <div className="flex flex-col  pattern   bg-cover items-center w-full h-[865px] bg-pink-100 mb-[300px]  ">
+    <div className="flex flex-col  pattern  smallhide largehide bg-cover items-center w-full h-[865px] bg-pink-100 mb-[300px]  ">
       <div className="w-[375px] h-[320px] real bg-cover bg-white"></div>
       <div className="flex flex-col font-regular w-full mt-[60px]">
         <div className="flex">

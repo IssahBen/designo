@@ -8,7 +8,7 @@ function Locations() {
     navigate("/location");
   }
   return (
-    <div className="flex flex-col space-y-14 w-full h-[1188px] mt-20 mb-20 smallhide largehide">
+    <div className="flex flex-col space-y-14 w-full h-[1188px] mt-20 mb-20  largehide">
       <div className="flex flex-col items-center px-10 relative h-[364px]">
         <div
           className="pattern270 w-[202px] h-[202px] flex justify-center bg-cover 

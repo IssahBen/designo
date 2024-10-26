@@ -7,7 +7,7 @@ export default function MobileHero() {
   }
 
   return (
-    <div className="  flex    smallhide largehide bg-peach w-full h-[843px]   overflow-hidden">
+    <div className="  flex   smallhide largehide  bg-peach w-full h-[843px]   overflow-hidden">
       <div className="flex flex-col  pattern   bg-cover items-center w-full   ">
         <div className="flex flex-col font-regular w-full mt-[60px]">
           <div className="flex">

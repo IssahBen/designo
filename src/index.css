@@ -5,7 +5,7 @@
 .josth1 {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 48px;
+  font-size: 48px;
   font-style: normal;
 }
 .josth2 {
@@ -129,6 +129,15 @@
 .mobilelyft {
   background-image: url("images/Home/Mobile/lyft.jpg");
 }
+.tabletweb {
+  background-image: url("images/Home/Tablet/web.jpg");
+}
+.tabletgraphic {
+  background-image: url("images/Home/Tablet/graphic.jpg");
+}
+.tabletlyft {
+  background-image: url("images/Home/Tablet/lyft.jpg");
+}
 .express {
   background-image: url("images/Web/image-express.jpg");
 }
@@ -182,6 +191,15 @@
 }
 .real {
   background-image: url("images/About/Mobile/real.jpg");
+}
+.tablethero {
+  background-image: url("images/About/Tablet/hero.jpg");
+}
+.tabletclass {
+  background-image: url("images/About/Tablet/class.jpg");
+}
+.tabletreal {
+  background-image: url("images/About/Tablet/real.jpg");
 }
 .canada {
   background-image: url("images/Locations/Mobile/canada.png");
