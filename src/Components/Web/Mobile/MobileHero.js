@@ -1,11 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import image from "../../../images/Home/Mobile/image-hero-phone.png";
 export default function MobileHero() {
-  const navigate = useNavigate();
-  function HandleClick() {
-    navigate("/headphones/mark2");
-  }
-
   return (
     <div className="  flex    smallhide largehide bg-peach w-full h-[320px]   overflow-hidden">
       <div className="flex flex-col  pattern   bg-cover items-center w-full   ">

@@ -1,9 +1,12 @@
 import DesktopNav from "../Navbars and Footers/DesktopNav";
+import Desktopfooter from "../Navbars and Footers/Desktopfooter";
 import Mobilefooter from "../Navbars and Footers/MobileFooter";
 import MobileNav from "../Navbars and Footers/MobileNav";
 import Tabletfooter from "../Navbars and Footers/TabletFooter";
 import TabletNav from "../Navbars and Footers/TabletNav";
+import DesktopCategory from "./Desktop/DesktopCategory";
 import DesktopHero from "./Desktop/DesktopHero";
+import DesktopIllustration from "./Desktop/DesktopIllustration";
 import Illustration from "./Mobile/Illustration";
 import MobileCategory from "./Mobile/MobileCategory";
 import MobileHero from "./Mobile/MobileHero";
@@ -30,11 +33,14 @@ function Home() {
           <div className=" w-full flex flex-col  items-center  bg-white ">
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
             <Illustration />
             <TabletIllustration />
+            <DesktopIllustration />
           </div>
           <Mobilefooter />
           <Tabletfooter />
+          <Desktopfooter />
         </div>
       </main>
     </div>

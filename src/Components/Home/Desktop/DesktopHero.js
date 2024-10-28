@@ -3,11 +3,11 @@ import image from "../../../images/Home/Mobile/image-hero-phone.png";
 export default function DesktopHero() {
   const navigate = useNavigate();
   function HandleClick() {
-    navigate("/headphones/mark2");
+    navigate("/about");
   }
 
   return (
-    <div className="w-full flex justify-center desktophide ">
+    <div className="w-full flex justify-center desktophide mt-10 ">
       <div className=" w-[1111px] h-[600px]   ">
         <div className="  flex     bg-peach w-full h-[600px]  overflow-hidden  rounded-xl">
           <div className="flex  bg-peach  justify-between pattern   bg-cover  w-full h-full   ">
@@ -33,7 +33,7 @@ export default function DesktopHero() {
 
               <button
                 onClick={HandleClick}
-                class="bg-white hover:bg-hoverbrown  text-black font-normal py-4  rounded-xl w-[103px] "
+                class="bg-white hover:bg-lightpeach  hover:text-white text-black font-normal py-4  rounded-xl w-[103px] "
               >
                 Learn More
               </button>

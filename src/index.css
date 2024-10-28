@@ -138,6 +138,15 @@
 .tabletlyft {
   background-image: url("images/Home/Tablet/lyft.jpg");
 }
+.desktopweb {
+  background-image: url("images/Home/Desktop/web.jpg");
+}
+.desktopgraphic {
+  background-image: url("images/Home/Desktop/graphic.jpg");
+}
+.desktoplyft {
+  background-image: url("images/Home/Desktop/lyft.jpg");
+}
 .express {
   background-image: url("images/Web/image-express.jpg");
 }
@@ -201,6 +210,15 @@
 .tabletreal {
   background-image: url("images/About/Tablet/real.jpg");
 }
+.desktophero {
+  background-image: url("images/About/Desktop/hero.jpg");
+}
+.desktopclass {
+  background-image: url("images/About/Desktop/class.jpg");
+}
+.desktopreal {
+  background-image: url("images/About/Desktop/real.jpg");
+}
 .canada {
   background-image: url("images/Locations/Mobile/canada.png");
 }
@@ -209,6 +227,15 @@
 }
 .uk {
   background-image: url("images/Locations/Mobile/uk.png");
+}
+.desktopcanada {
+  background-image: url("images/Locations/Desktop/canada.png");
+}
+.desktopaustralia {
+  background-image: url("images/Locations/Desktop/australia.png");
+}
+.desktopuk {
+  background-image: url("images/Locations/Desktop/uk.png");
 }
 
 .smallhide {

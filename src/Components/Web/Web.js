@@ -1,7 +1,12 @@
+import DesktopNav from "../Navbars and Footers/DesktopNav";
+import Desktopfooter from "../Navbars and Footers/Desktopfooter";
 import Mobilefooter from "../Navbars and Footers/MobileFooter";
 import MobileNav from "../Navbars and Footers/MobileNav";
 import Tabletfooter from "../Navbars and Footers/TabletFooter";
 import TabletNav from "../Navbars and Footers/TabletNav";
+import DesktopCategory from "./Desktop/DesktopCategory";
+import DesktopHero from "./Desktop/DesktopHero";
+import DesktopServices from "./Desktop/DesktopServices";
 import MobileCategory from "./Mobile/MobileCategory";
 import MobileHero from "./Mobile/MobileHero";
 import Services from "./Mobile/Services";
@@ -15,6 +20,7 @@ function Web() {
       <main className="w-full h-full">
         <MobileNav />
         <TabletNav />
+        <DesktopNav />
         <div
           id="overlay"
           className="w-full h-lvh absolute z-10 hidden overflow-hidden bg-black opacity-80"
@@ -22,14 +28,19 @@ function Web() {
         <div id="body" className="w-full h-full ">
           <MobileHero />
           <TabletHero />
+          <DesktopHero />
+
           <div className=" w-full flex flex-col  items-center  bg-white ">
             <Services />
             <TabletServices />
+            <DesktopServices />
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
           </div>
           <Mobilefooter />
           <Tabletfooter />
+          <Desktopfooter />
         </div>
       </main>
     </div>

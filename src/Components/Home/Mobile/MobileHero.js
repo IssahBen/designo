@@ -3,7 +3,7 @@ import image from "../../../images/Home/Mobile/image-hero-phone.png";
 export default function MobileHero() {
   const navigate = useNavigate();
   function HandleClick() {
-    navigate("/headphones/mark2");
+    navigate("/about");
   }
 
   return (

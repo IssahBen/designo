@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export default function MobileNav() {
@@ -52,11 +52,19 @@ export default function MobileNav() {
             <div
               id="menu"
               ref={mobileMenu}
-              className="absolute  rounded-bl-2xl   z-20 tracking-tighter top-14 right-0 hidden   manropereg  w-full    pb-10 px-10  uppercase bg-white text-tintwhite"
+              className="absolute h-[235px]  rounded-bl-2xl   z-20 tracking-tighter top-14 right-0 hidden   manropereg  w-full    pb-10 px-10  uppercase bg-black text-tintwhite"
             >
-              <p>fdgdg</p>
-              <p>fdgdg</p>
-              <p>fdgdg</p>
+              <div className="flex   text-white  jostreg font-medium tracking-widest justify-evenly flex-col w-full h-[235px]">
+                <NavLink to="/about" className="hover:text-hoverbrown">
+                  OUR COMPANY
+                </NavLink>
+                <NavLink to="/location" className="hover:text-hoverbrown">
+                  LOCATIONS
+                </NavLink>
+                <NavLink to="/contact" className="hover:text-hoverbrown">
+                  CONTACT
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>

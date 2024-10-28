@@ -1,32 +1,32 @@
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-export default function Tabletfooter() {
+export default function Desktopfooter() {
   const navigate = useNavigate();
   function Redirect() {
     navigate("/contact");
   }
   return (
-    <div className="flex flex-col w-full h-[423px] bg-black items-center  mediumhide largehide relative">
-      <div className="flex flex-col w-[690px] h-[350px] bg-peach absolute z-10 top-[-280px] rounded-2xl">
-        <div className="flex flex-col  pattern   bg-contain items-center w-full   ">
-          <div className="flex flex-col font-regular w-full mt-[30px]">
-            <div className="flex">
-              <p className=" text-white   jostmed w-full text-center tracking-wide">
-                Let's talk about
-              </p>
+    <div className="flex flex-col w-full h-[423px] bg-black items-center  desktophide relative">
+      <div className="flex  w-[1111px] h-[292px] bg-peach absolute z-10 top-[-180px] rounded-2xl px-20">
+        <div className="flex  pattern   bg-contain items-center w-full   ">
+          <div className="">
+            {" "}
+            <div className="flex flex-col font-regular w-full mt-[30px]">
+              <div className="flex">
+                <p className=" text-white   jostmed w-full  tracking-wide">
+                  Let's talk about
+                </p>
+              </div>
+              <p className=" text-white jostmed  tracking-wide">your project</p>
             </div>
-            <p className=" text-white jostmed text-center tracking-wide">
-              your project
+            <p className="jost15  mt-2  mb-10  tracking-widest  text-white leading-7 pr-[400px] ">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business now
             </p>
           </div>
-          <p className="jost15  mt-2  mb-10 text-center tracking-widest  text-white leading-7 px-20 ">
-            Ready to take it to the next level? Contact us today and find out
-            how our expertise can help your business now
-          </p>
-
           <button
             onClick={Redirect}
-            class="bg-white hover:bg-hoverbrown  text-black font-normal py-4 px-10 rounded-xl "
+            class="bg-white hover:bg-lightpeach  hover:text-white text-black font-normal w-[240px] py-5 px-2 rounded-xl "
           >
             GET IN TOUCH
           </button>
@@ -48,6 +48,7 @@ export default function Tabletfooter() {
           </NavLink>
         </div>
       </div>
+      <div className="border-b-[1px] bg-slate-100 w-[1111px] mt-10"></div>
       <div className="flex w-full justify-between px-16 mt-16 ">
         <div className="flex flex-col jost14 items-center  space-y-2 font-light text-lightgrey">
           <p className=" font-bold">Designo Central Office</p>
