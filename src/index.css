@@ -244,19 +244,26 @@
   }
 }
 
-.mediumhide {
-  @media screen and (max-width: 760px) and (min-width: 320px) {
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+  .smallhide {
     display: none;
   }
 }
 
-.largehide {
-  @media screen and (min-width: 1021px) {
+@media screen and (max-width: 760px) and (min-width: 320px) {
+  .mediumhide {
     display: none;
   }
 }
-.desktophide {
-  @media screen and (max-width: 1021px) {
+
+@media screen and (min-width: 1021px) {
+  .largehide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .desktophide {
     display: none;
   }
 }
