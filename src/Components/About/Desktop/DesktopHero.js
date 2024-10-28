@@ -1,6 +1,6 @@
 function DesktopHero() {
   return (
-    <div className="w-full  desktophide px-16">
+    <div className="w-full  desktophide  flex justify-center">
       <div className="  flex  flex-col  bg-white w-[1111px]    overflow-hidden  space-y-20">
         <div className="flex     bg-peach   w-full h-[480px]   rounded-xl">
           <div className="flex flex-col font-regular w-[635px]   pattern bg-cover justify-center px-20">
