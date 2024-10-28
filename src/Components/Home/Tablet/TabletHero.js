@@ -7,8 +7,8 @@ export default function TabletHero() {
   }
 
   return (
-    <div className="px-16 w-full h-[940px] ">
-      <div className="  flex   mediumhide largehide  bg-peach w-full h-[940px]   overflow-hidden  rounded-xl">
+    <div className="px-16 w-full h-[940px] mediumhide largehide  ">
+      <div className="  flex    bg-peach w-full h-[940px]   overflow-hidden  rounded-xl">
         <div className="flex flex-col  pattern   bg-cover items-center w-full   ">
           <div className="flex flex-col font-regular w-full mt-[60px]">
             <div className="flex">

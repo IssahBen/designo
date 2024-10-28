@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-export default function TabletNav() {
+export default function DesktopNav() {
   const navigate = useNavigate();
 
   function Home() {
@@ -10,7 +10,7 @@ export default function TabletNav() {
   }
 
   return (
-    <div className="w-full flex justify-center bg-white mediumhide largehide h-[70px] px-8">
+    <div className="w-full flex justify-center bg-white  desktophide h-[70px] px-[75px]">
       <div className="flex w-full bg-white py-4  px-4 items-center justify-between ">
         <div className="flex justify-between w-full bg-white h-[27px]">
           <div onClick={Home} className="w-[202px] darklogo  bg-cover"></div>
