@@ -1,7 +1,7 @@
 function DesktopPoster() {
   return (
     <div className="px-16 mb-[300px]">
-      <div className="flex  flex-row-reverse pattern   bg-cover   w-full h-[640px] bg-pink-100 rounded-xl  ">
+      <div className="flex  flex-row-reverse pattern   bg-cover   w-[1111px] h-[640px] bg-pink-100 rounded-xl  ">
         <div className="w-[476px] h-[640px] desktopreal bg-cover bg-white"></div>
         <div className="flex flex-col font-regular w-[635px] justify-center px-16">
           <div className="flex">
