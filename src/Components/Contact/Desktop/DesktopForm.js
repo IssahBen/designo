@@ -1,4 +1,48 @@
-function DesktopForm() {
+import { useState } from "react";
+
+function DesktopForm({ setSuccessMessage }) {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  async function Send(obj) {
+    try {
+      const res = await fetch(
+        `
+          http://localhost:3000/contact`,
+        {
+          method: "post",
+          body: obj,
+        }
+      );
+
+      const data = await res.json();
+
+      if (data.message) {
+        return "ok";
+      } else {
+        return "error";
+      }
+    } catch (error) {
+      return "error";
+    }
+  }
+  async function Submit(e) {
+    e.preventDefault();
+    let formData = new FormData();
+    formData.append("customer[name]", name);
+    formData.append("customer[email]", email);
+    formData.append("customer[number]", phone);
+    formData.append("customer[message]", message);
+
+    const status = await Send(formData);
+
+    if (status === "ok") {
+      setSuccessMessage("Message Sent");
+    } else {
+      alert("error");
+    }
+  }
   return (
     <div className="w-full px-24 py-10  desktophide">
       {" "}
@@ -20,11 +64,15 @@ function DesktopForm() {
             </p>
           </div>
           <div className="flex flex-col w-full h-[387px] mt-10 ">
-            <form class="w-full  ">
+            <form onSubmit={Submit} class="w-full  ">
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full  px-3 mb-6 ">
                   <input
-                    class="appearance-none block w-full bg-peach placeholder-white text-white border-b-2 border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white "
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
+                    value={name}
+                    class="appearance-none block w-full bg-peach placeholder-white text-white border-b-2 border-gray-200  py-3 px-4 leading-tight  "
                     id="grid-city"
                     type="text"
                     placeholder="Name"
@@ -32,7 +80,11 @@ function DesktopForm() {
                 </div>
                 <div class="w-full  px-3">
                   <input
-                    class="appearance-none block w-full bg-peach placeholder-white  text-white border-b-2 border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white "
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    value={email}
+                    class="appearance-none block w-full bg-peach placeholder-white  text-white border-b-2 border-gray-200  py-3 px-4 leading-tight  "
                     id="grid-city"
                     type="text"
                     placeholder="Email address"
@@ -42,7 +94,11 @@ function DesktopForm() {
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
                   <input
-                    class="appearance-none block w-full placeholder-white bg-peach text-white border-b-2 border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white "
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                    }}
+                    value={phone}
+                    class="appearance-none block w-full placeholder-white bg-peach text-white border-b-2 border-gray-200  py-3 px-4 leading-tight "
                     id="grid-city"
                     type="text"
                     placeholder="Phone"
@@ -52,8 +108,12 @@ function DesktopForm() {
               <div class="flex flex-wrap -mx-3 mb-2">
                 <div class="w-full  px-3 mb-6 ">
                   <textarea
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                    value={message}
                     rows="3"
-                    class="appearance-none block w-full bg-peach placeholder-white  text-white border-b-2 border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white "
+                    class="appearance-none block w-full bg-peach placeholder-white  text-white border-b-2 border-gray-200  py-3 px-4 leading-tight  "
                     id="grid-city"
                     type="text"
                     placeholder="Your Message"
