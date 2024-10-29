@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function TabletForm({ setSuccessMessage }) {
+function TabletForm({ setSuccessMessage, setErrorMessage }) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -40,7 +40,7 @@ function TabletForm({ setSuccessMessage }) {
     if (status === "ok") {
       setSuccessMessage("Message Sent");
     } else {
-      alert("error");
+      setErrorMessage("Error");
     }
   }
   return (
