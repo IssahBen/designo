@@ -9,7 +9,7 @@ function DesktopForm({ setSuccessMessage, setErrorMessage }) {
     try {
       const res = await fetch(
         `
-          http://localhost:3000/contact`,
+          http://localhost:3000/api/v1/contact`,
         {
           method: "post",
           body: obj,
