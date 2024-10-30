@@ -40,7 +40,7 @@ function Form({ setSuccessMessage, setErrorMessage }) {
     if (status === "ok") {
       setSuccessMessage("Message Sent");
     } else {
-      setErrorMessage("Error");
+      setErrorMessage("Server Offline");
     }
   }
   return (
